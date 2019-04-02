@@ -2,7 +2,7 @@
 
 This is an example of a very simplified insurance sales system made in a microservice architecture using Micronaut.
 
-Comprehensive guide describing exactly the architecture, applied design patterns and technologies can be found on **[our blog](https://asc.altkom.pl/en/blog/microservices-micronaut/)**.
+Comprehensive guide describing exactly the architecture, applied design patterns and technologies can be found on our blog in article **[Building Microservices with Micronaut](https://altkomsoftware.pl/en/blog/microservices-micronaut/)**.
 
 **We encourage you to read, because in this README there is only a substitute for all information.**
 
@@ -69,7 +69,7 @@ build.bat
 
 ## Running
 
-Prerequisites:
+### Prerequisites
 * **docker**
 * **docker-compose**
 
@@ -117,6 +117,16 @@ kafka-create-cluster.sh
 * Zipkin dashboard: ```http://localhost:9411/zipkin/```
 * Kafka Manager dashboard: ```http://localhost:9000/```
 * JSReport dashboard: ```http://localhost:5488/```
+
+#### Add POLICY template to JsReport
+
+<p align="center">
+    <img alt="Zipkin" src="https://raw.githubusercontent.com/asc-lab/micronaut-microservices-poc/master/readme-images/jsreport-add-template.png" />
+</p>
+
+1. Click "+".
+2. Type name "POLICY" and content from file [policy.template](https://github.com/asc-lab/micronaut-microservices-poc/blob/master/documents-service/src/main/resources/policy.template).
+3. Commit changes.
 
 #### Consul without our script
 ```
